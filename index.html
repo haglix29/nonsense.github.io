@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" />
+    <title>QUESTIONNAIRE</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">QUESTIONNAIRE</h1>
+    <p id="description">Please answer some simple questions for my research. Thank you!</p>
+    <form id="survey-form">
+      <fieldset class="fieldset-one">
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Bogart Han" required/></label>
+        <label id="email-label" for="email">Email: <input id="email"type="email" placeholder="12345678@gmail.com" required/></label>
+        <label id="number-label" for="number">Age: <input id="number" type="number" min="17" max="120" placeholder="17-120" required /></label>
+        <label>School: </label>
+        <select id="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">TCC</option>
+          <option value="2">MNHS</option>
+          <option value="3">TNHS</option>
+          <option value="4">URS</option>
+          <option value="5">FEU SHS</option>
+          <option value="6">Others</option>
+        <select>
+      </fieldset>
+      <fieldset>
+        <label id="like">What do you like more?</label>
+        <label for="indoor"><input type="radio" value="1" id="indoor" name="place" class="inline" />Indoor</label>
+        <label for="outdoor"><input type="radio" value="2" id="outndoor" name="place" class="inline"/>Outdoor</label>
+      </fieldset>
+      <fieldset class="fieldset-two">
+        <label for="sports">What Sports do you like more?</label>
+          <label><input value="1" id="sports" type="checkbox" class="inline" />Basketball</label>
+          <label><input value="2" id="sports" type="checkbox" class="inline" />Volleyball</label>
+          <label><input value="3" id="sports" type="checkbox" class="inline" />Baseball</label>
+          <label><input value="4" id="sports" type="checkbox" class="inline" />Football</label>
+          <label><input value="5" id="sports" type="checkbox" class="inline" />Soccer</label>
+      </fieldset>
+      <fieldset class="fieldset-three">
+        <label for="suggestion">Suggestions:
+            <textarea id="suggestion" name="bio" rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
